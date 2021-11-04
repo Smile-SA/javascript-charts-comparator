@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "@toast-ui/chart": "^4.4.1",
+    "apexcharts": "^3.28.3",
+    "chart.js": "^3.6.0",
+    "chartist": "^0.11.4",
+    "moment": "^2.29.1",
+    "storybook": "^6.3.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@storybook/addon-actions": "^6.3.10",
+    "@storybook/addon-essentials": "^6.3.10",
+    "@storybook/addon-links": "^6.3.10",
+    "@storybook/html": "^6.3.10",
+    "babel-loader": "^8.2.2"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  }
+}
