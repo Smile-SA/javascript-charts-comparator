@@ -1,11 +1,10 @@
-require('apexcharts/dist/apexcharts.css')
-require('chartist/dist/chartist.min.css');
-require('@toast-ui/chart/dist/toastui-chart.css');
 import * as Chartist from 'chartist';
 import * as ApexCharts from 'apexcharts';
 import Chart from 'chart.js/auto';
 import ToastUi from '@toast-ui/chart';
-
+require('apexcharts/dist/apexcharts.css');
+require('chartist/dist/chartist.min.css');
+require('@toast-ui/chart/dist/toastui-chart.css');
 
 /**
  * @param {HTMLElement} container perent element of apex render
@@ -21,9 +20,12 @@ export default (function (container, options) {
      */
     async function run(options, el) {
         let optionsData = options.data, optionsOptions = options.options, optionsType = options.type;
+        el.innerHTML='';
         if (options.library === "apex") {
-            const chart = new ApexCharts(el, optionsData);
-            await chart.render();
+            var chart = new ApexCharts(el, optionsData);
+            setTimeout(function() {
+                chart.render();
+            }, 0);
         } else if (options.library === "chartJs") {
             const canvas = document.createElement('canvas');
             el.appendChild(canvas);
