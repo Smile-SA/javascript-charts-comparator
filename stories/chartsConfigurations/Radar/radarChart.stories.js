@@ -2,7 +2,7 @@ import {chartDiv} from '../../controls/chartDiv';
 import {defaultControls} from "../../controls/default_controls";
 
 export default {
-    title: 'RADAR CHARTS/BASIC',
+    title: 'RADAR CHARTS/Default',
     argTypes: defaultControls(),
 };
 

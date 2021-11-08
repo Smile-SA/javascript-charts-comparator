@@ -2,7 +2,7 @@ import {chartDiv} from '../../controls/chartDiv';
 import {defaultControls} from "../../controls/default_controls";
 
 export default {
-    title: 'AREA CHARTS/ Basic',
+    title: 'AREA CHARTS/ Default',
     argTypes: defaultControls(),
 };
 

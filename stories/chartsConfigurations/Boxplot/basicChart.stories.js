@@ -2,7 +2,7 @@ import {chartDiv} from '../../controls/chartDiv';
 import {defaultControls} from "../../controls/default_controls";
 
 export default {
-    title: 'BOX CHARTS/ Basic',
+    title: 'BOX CHARTS/ Default',
     argTypes: defaultControls(),
 };
 
@@ -50,7 +50,7 @@ Apex.args = {
             height: 350
         },
         title: {
-            text: 'Basic BoxPlot Chart',
+            text: 'Default BoxPlot Chart',
             align: 'left'
         },
         plotOptions: {
